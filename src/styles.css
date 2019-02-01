@@ -1,14 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
-$dark1:#383c49;
-$dark2: #e4ecff;
-$dark3: #4b5062;
-$dark4: #7b808c;
-$primary: #4e92e5;
 :root {
-    --input-padding-x: .75rem;
-    --input-padding-y: .75rem;
-  }
-  html,
+  --input-padding-x: .75rem;
+  --input-padding-y: .75rem;
+}
+
+html,
 body {
   height: 100%;
 }
@@ -25,13 +21,16 @@ body {
   justify-content: center;
   padding-top: 40px;
   padding-bottom: 40px;
-  background-color: $dark1;
-  .btn-primary {
-    color: #fff;
-    background-color: $primary;
-    border-color: $primary;
-  }
-  a{
-      color: $primary;
-  }
-} 
+  background-color: #383c49;
+}
+
+body .btn-primary {
+  color: #fff;
+  background-color: #4e92e5;
+  border-color: #4e92e5;
+}
+
+body a {
+  color: #4e92e5;
+}
+/*# sourceMappingURL=styles.css.map */
