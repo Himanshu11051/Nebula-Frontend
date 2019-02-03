@@ -3,7 +3,7 @@ $dark1:#383c49;
 $dark2: #e4ecff;
 $dark3: #4b5062;
 $dark4: #7b808c;
-$primary: #4e92e5;
+$primary: #1d8cf8;
 :root {
     --input-padding-x: .75rem;
     --input-padding-y: .75rem;
@@ -11,6 +11,7 @@ $primary: #4e92e5;
   html,
 body {
   height: 100%;
+  font-family: 'Open Sans' !important, sans-serif;
 }
 
 body {
@@ -25,11 +26,15 @@ body {
   justify-content: center;
   padding-top: 40px;
   padding-bottom: 40px;
-  background-color: $dark1;
+  background: radial-gradient(#1e1e2f,#1e1e24);
   .btn-primary {
     color: #fff;
-    background-color: $primary;
-    border-color: $primary;
+    background: linear-gradient(0deg,#ff6491,#ff8d72);
+    border-color: #ff6491;
+  }
+  .btn-primary:hover{
+    background: linear-gradient(0deg,#ff6491,#ff8d72);
+    border-color: #ff6491;
   }
   a{
       color: $primary;

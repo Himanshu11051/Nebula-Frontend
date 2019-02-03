@@ -1,55 +1,49 @@
-<div class = "container">
+<div class="container">
   <div class="row">
-    <div class = "col-md-8 offset-md-2 mainContainer">
-        <div class="col-md-4 leftContainer">
-            <div class="text-center mb-4">
-              <img class="mb-4" src="https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
-              <h1 class="h3 mb-3 font-weight-normal">NEBULA</h1>
-              <ul>
-                <li>
-                  Bot framework
-                </li>
-                <li>
-                    Bot framework
-                  </li>
-                  <li>
-                      Bot framework
-                    </li>
-              </ul>
-            </div>
+    <div class="col-md-8 offset-md-2 mainContainer">
+      <div class="col-md-4 leftContainer">
+        <div class="text-center mb-4">
+          <img class="mb-4" src="https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg" alt="" width="72"
+            height="72">
+          <h1 class="h3 mb-3 font-weight-normal">NEBULA</h1>
+          <ul>
+            <li>
+              Bot framework
+            </li>
+            <li>
+              Bot framework
+            </li>
+            <li>
+              Bot framework
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-8 rightContainer">
+        <form class="form-signin">
+          <div class="mb-4">
+            <ul class="login-register">
+              <li [class.active]="login" (click)="login_signup(true)">
+                Login
+              </li>
+              <li>/</li>
+              <li [class.active]="!login" (click)="login_signup(false)">Signup</li>
+            </ul>
           </div>
-          <div class="col-md-8 rightContainer">
-            <form class="form-signin">
-              <div class="mb-4">
-                <ul class = "login-register">
-                  <li class = "active">
-                    Login
-                  </li>
-                  <li>/</li>
-                  <li>Signup</li>
-                </ul>
-              </div>
-            
-              <div class="form-label-group">
-                <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
-                <label for="inputEmail">Email address</label>
-              </div>
-            
-              <div class="form-label-group">
-                <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-                <label for="inputPassword">Password</label>
-              </div>
-            
-              <!-- <div class="checkbox mb-3">
-                <label>
-                  <input type="checkbox" value="remember-me"> Remember me
-                </label>
-              </div> -->
-              <button class="btn btn-lg btn-primary btn-block" type="submit">Log in</button>
-            </form>
-          </div>
-    </div>
 
+          <div class="form-label-group">
+            <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+            <label for="inputEmail">Email address</label>
+          </div>
+
+          <div class="form-label-group">
+            <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+            <label for="inputPassword">Password</label>
+          </div>
+          <button class="btn btn-lg btn-primary btn-block" *ngIf="login" (click)="gotoDashboard()">Log in</button>
+          <button class="btn btn-lg btn-primary btn-block" *ngIf="!login" (click)="gotoDashboard()">Signup</button>
+        </form>
+      </div>
+    </div>
   </div>
 </div>
-

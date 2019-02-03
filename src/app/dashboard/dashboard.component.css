@@ -1,1 +1,160 @@
-/* No CSS *//*# sourceMappingURL=dashboard.component.css.map */
+.wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+}
+
+.wrapper .mainPanel {
+  height: 100vh;
+  width: 100%;
+}
+
+.wrapper .mainPanel .gradientBand {
+  background: -webkit-gradient(linear, left bottom, left top, from(#ff6491), to(#ff8d72));
+  background: linear-gradient(0deg, #ff6491, #ff8d72);
+  width: 100%;
+  height: 5px;
+}
+
+.wrapper .mainPanel .navbar {
+  background: transparent !important;
+  position: absolute;
+  z-index: 1050;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: .625rem .9375rem;
+  color: #fff;
+}
+
+.wrapper .mainPanel .navbar .navbar-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.wrapper .mainPanel .navbar .navbar-nav li {
+  color: #fff;
+  padding: 0 10px;
+}
+
+.wrapper .mainPanel .navbar .navbar-nav li .photo {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 1px solid #fff;
+  padding: 8px;
+  color: #fff;
+  vertical-align: middle;
+  background: -webkit-gradient(linear, left bottom, left top, from(#ff6491), to(#ff8d72));
+  background: linear-gradient(0deg, #ff6491, #ff8d72);
+}
+
+.wrapper .mainPanel .navbar .navbar-nav li .caret {
+  position: absolute;
+  left: 80%;
+  top: 55%;
+  margin-left: 0;
+  width: 0;
+  height: 0;
+  vertical-align: middle;
+  border-top: 4px dashed;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+  margin-top: -5px;
+  position: absolute;
+  top: 30px;
+  margin-left: 5px;
+}
+
+.wrapper .mainPanel .navbar .navbar-nav li .dropdown-menu {
+  position: absolute;
+  left: -98px;
+}
+
+.wrapper .mainPanel .card {
+  background: #27293d;
+  border: 0;
+  position: relative;
+  width: 100%;
+  margin-bottom: 30px;
+  -webkit-box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .mainPanel .dashboardContainer {
+  position: absolute;
+  left: 0;
+  top: 55px;
+  width: 100%;
+  height: calc(100% - 75px);
+  padding: 20px;
+}
+
+.wrapper .mainPanel .dashboardContainer .configureBotSection .banner {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.wrapper .mainPanel .dashboardContainer .configureBotSection .banner h5 {
+  background: -webkit-linear-gradient(0deg, #ff6491, #ff8d72);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.wrapper .mainPanel .dashboardContainer .configureBotSection .steps {
+  height: 400px;
+  width: 120px;
+  color: #fff;
+  border-radius: 4px;
+  float: left;
+}
+
+.wrapper .mainPanel .dashboardContainer .configureBotSection .steps ul {
+  padding: 0px;
+  display: block;
+  width: 100%;
+}
+
+.wrapper .mainPanel .dashboardContainer .configureBotSection .steps ul li {
+  list-style: none;
+  height: 70px;
+  width: 100%;
+  display: block;
+  border: 2px solid #ff6491;
+  -webkit-box-shadow: 0 2px 10px 0 rgba(255, 100, 145, 0.5), 0 2px 30px 0 rgba(0, 0, 0, 0.35);
+          box-shadow: 0 2px 10px 0 rgba(255, 100, 145, 0.5), 0 2px 30px 0 rgba(0, 0, 0, 0.35);
+  margin-bottom: 20px;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 18px;
+  padding: 7px;
+  cursor: pointer;
+}
+
+.wrapper .mainPanel .dashboardContainer .configureBotSection .steps ul li.completed {
+  background: -webkit-gradient(linear, left bottom, left top, from(#ff6491), to(#ff8d72));
+  background: linear-gradient(0deg, #ff6491, #ff8d72);
+  -webkit-box-shadow: 0 2px 22px 0 rgba(0, 0, 0, 0.2), 0 2px 30px 0 rgba(0, 0, 0, 0.35);
+          box-shadow: 0 2px 22px 0 rgba(0, 0, 0, 0.2), 0 2px 30px 0 rgba(0, 0, 0, 0.35);
+  font-weight: bolder;
+}
+
+.wrapper .mainPanel .dashboardContainer .configureBotSection .stepsContainer {
+  width: calc(100% - 160px);
+  float: left;
+  height: 400px;
+  margin-left: 30px;
+}
+/*# sourceMappingURL=dashboard.component.css.map */
