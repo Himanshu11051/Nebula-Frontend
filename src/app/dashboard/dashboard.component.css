@@ -152,9 +152,39 @@
 }
 
 .wrapper .mainPanel .dashboardContainer .configureBotSection .stepsContainer {
-  width: calc(100% - 160px);
+  width: calc(100% - 190px);
   float: left;
-  height: 400px;
+  height: calc(100% - 80px);
+  left: 130px;
+  position: absolute;
   margin-left: 30px;
+  padding: 20px;
+}
+
+.wrapper .mainPanel .dashboardContainer .configureBotSection .stepsContainer .body .heading {
+  text-align: center;
+}
+
+.wrapper .mainPanel .dashboardContainer .configureBotSection .stepsContainer .body .heading h2 {
+  color: #fff;
+}
+
+.wrapper .mainPanel .dashboardContainer .configureBotSection .stepsContainer .footer {
+  position: absolute;
+  width: 100%;
+  bottom: 20px;
+  display: block;
+  text-align: center;
+}
+
+.wrapper .mainPanel .dashboardContainer .configureBotSection .stepsContainer .footer button {
+  margin-right: 20px;
+  width: 95px;
+}
+
+.wrapper .mainPanel .dashboardContainer .configureBotSection .stepsContainer .footer .previous, .wrapper .mainPanel .dashboardContainer .configureBotSection .stepsContainer .footer .next {
+  background: -webkit-gradient(linear, left bottom, left top, from(#3358f4), to(#1d8cf8));
+  background: linear-gradient(0deg, #3358f4, #1d8cf8);
+  color: #fff;
 }
 /*# sourceMappingURL=dashboard.component.css.map */
