@@ -163,9 +163,100 @@
 
 .wrapper .mainPanel .dashboardContainer .configureBotSection .stepsContainer .body .heading {
   text-align: center;
+  margin-bottom: 30px;
 }
 
 .wrapper .mainPanel .dashboardContainer .configureBotSection .stepsContainer .body .heading h2 {
+  color: #fff;
+  display: inline-block;
+  margin-bottom: 0;
+  vertical-align: middle;
+  margin-left: 20px;
+}
+
+.wrapper .mainPanel .dashboardContainer .configureBotSection .stepsContainer .body .heading .stepNo {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 1px solid #ff6491;
+  padding: 8px;
+  color: #fff;
+  vertical-align: middle;
+  background: -webkit-gradient(linear, left bottom, left top, from(#ff6491), to(#ff8d72));
+  background: linear-gradient(0deg, #ff6491, #ff8d72);
+}
+
+.wrapper .mainPanel .dashboardContainer .configureBotSection .stepsContainer .body .mainBody label {
+  color: rgba(255, 255, 255, 0.6) !important;
+}
+
+.wrapper .mainPanel .dashboardContainer .configureBotSection .stepsContainer .body .mainBody .textDiv {
+  color: #fff;
+  text-align: center;
+}
+
+.wrapper .mainPanel .dashboardContainer .configureBotSection .stepsContainer .body .mainBody .upload-btn-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: block;
+}
+
+.wrapper .mainPanel .dashboardContainer .configureBotSection .stepsContainer .body .mainBody .upload-btn-wrapper .btn {
+  background: #1d8cf8;
+  background-image: -webkit-gradient(linear, right top, left bottom, from(#1d8cf8), color-stop(#3358f4), to(#1d8cf8));
+  background-image: linear-gradient(to bottom left, #1d8cf8, #3358f4, #1d8cf8);
+  background-size: 210% 210%;
+  background-position: 100% 0;
+  background-color: #1d8cf8;
+  -webkit-transition: all .15s ease;
+  transition: all .15s ease;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: #fff;
+}
+
+.wrapper .mainPanel .dashboardContainer .configureBotSection .stepsContainer .body .mainBody .upload-btn-wrapper input[type=file] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  cursor: pointer;
+  width: 120px;
+}
+
+.wrapper .mainPanel .dashboardContainer .configureBotSection .stepsContainer .body .mainBody .jsSection {
+  float: left;
+  height: auto;
+  border-right: 1px solid #fff;
+  margin-top: 20px;
+}
+
+.wrapper .mainPanel .dashboardContainer .configureBotSection .stepsContainer .body .mainBody .jsSection h5 {
+  color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.wrapper .mainPanel .dashboardContainer .configureBotSection .stepsContainer .body .mainBody .jsSection ol li {
+  color: #fff;
+}
+
+.wrapper .mainPanel .dashboardContainer .configureBotSection .stepsContainer .body .mainBody .wpSection {
+  float: left;
+  margin-top: 20px;
+  height: auto;
+}
+
+.wrapper .mainPanel .dashboardContainer .configureBotSection .stepsContainer .body .mainBody .wpSection h5 {
+  color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.wrapper .mainPanel .dashboardContainer .configureBotSection .stepsContainer .body .mainBody .wpSection ol li {
   color: #fff;
 }
 
@@ -182,9 +273,129 @@
   width: 95px;
 }
 
-.wrapper .mainPanel .dashboardContainer .configureBotSection .stepsContainer .footer .previous, .wrapper .mainPanel .dashboardContainer .configureBotSection .stepsContainer .footer .next {
-  background: -webkit-gradient(linear, left bottom, left top, from(#3358f4), to(#1d8cf8));
-  background: linear-gradient(0deg, #3358f4, #1d8cf8);
+.wrapper .mainPanel .dashboardContainer .configureBotSection .stepsContainer .footer .previous {
+  background: #fd5d93;
+  background-image: -webkit-gradient(linear, right top, left bottom, from(#fd5d93), color-stop(#ec250d), to(#fd5d93));
+  background-image: linear-gradient(to bottom left, #fd5d93, #ec250d, #fd5d93);
+  background-size: 210% 210%;
+  background-position: 100% 0;
+  background-color: #fd5d93;
+  -webkit-transition: all .15s ease;
+  transition: all .15s ease;
+  -webkit-box-shadow: none;
+          box-shadow: none;
   color: #fff;
+}
+
+.wrapper .mainPanel .dashboardContainer .configureBotSection .stepsContainer .footer .next {
+  background: #00f2c3;
+  background-image: -webkit-gradient(linear, right top, left bottom, from(#00f2c3), color-stop(#0098f0), to(#00f2c3));
+  background-image: linear-gradient(to bottom left, #00f2c3, #0098f0, #00f2c3);
+  background-size: 210% 210%;
+  background-position: 100% 0;
+  background-color: #00f2c3;
+  -webkit-transition: all .15s ease;
+  transition: all .15s ease;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: #fff;
+}
+
+.wrapper .mainPanel .dashboardContainer .configureBotSection .stepsContainer .footer .finish {
+  background: #ff8d72;
+  background-image: -webkit-gradient(linear, right top, left bottom, from(#ff8d72), color-stop(#ff6491), to(#ff8d72));
+  background-image: linear-gradient(to bottom left, #ff8d72, #ff6491, #ff8d72);
+  background-size: 210% 210%;
+  background-position: 100% 0;
+  background-color: #ff8d72;
+  -webkit-transition: all .15s ease;
+  transition: all .15s ease;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: #fff;
+}
+
+.wrapper .mainPanel .dashboardContainer .configureBotSection .stepsContainer .form-control {
+  display: block;
+  width: 100%;
+  height: calc(2.25rem + 2px);
+  padding: .5rem .7rem;
+  font-size: .875rem;
+  line-height: 1.428571;
+  color: rgba(255, 255, 255, 0.8);
+  background-color: transparent;
+  background-clip: padding-box;
+  border: 1px solid #fff;
+  border-radius: .25rem;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  border-color: #fff;
+  border-radius: .4285rem;
+  font-size: .75rem;
+  -webkit-transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.wrapper .mainPanel .dashboardContainer .configureBotSection .stepsContainer .form-control:-moz-placeholder, .wrapper .mainPanel .dashboardContainer .configureBotSection .stepsContainer .form-control::-moz-placeholder, .wrapper .mainPanel .dashboardContainer .configureBotSection .stepsContainer .form-control::-webkit-input-placeholder, .wrapper .mainPanel .dashboardContainer .configureBotSection .stepsContainer .form-control:-ms-input-placeholder {
+  color: #fff;
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+.wrapper .mainPanel .dashboardContainer .configureBotSection .stepsContainer .form-control:focus {
+  border-color: #ff6491;
+  background-color: transparent !important;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.wrapper .mainPanel .dashboardContainer .configureBotSection .stepsContainer .form-control:focus + .input-group-append .input-group-text, .wrapper .mainPanel .dashboardContainer .configureBotSection .stepsContainer .form-control:focus + .input-group-prepend .input-group-text {
+  border: 1px solid #ff6491;
+  border-left: none;
+  background-color: transparent;
+}
+
+.wrapper .mainPanel .dashboardContainer .configureBotSection .stepsContainer .form-control:focus ~ .input-group-append .input-group-text, .wrapper .mainPanel .dashboardContainer .configureBotSection .stepsContainer .form-control:focus ~ .input-group-prepend .input-group-text {
+  border: 1px solid #ff6491;
+  border-left: none;
+  background-color: transparent;
+}
+
+.wrapper .mainPanel .dashboardContainer .configureBotSection .stepsContainer .has-error .form-control, .wrapper .mainPanel .dashboardContainer .configureBotSection .stepsContainer .has-success .form-control {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.wrapper .mainPanel .dashboardContainer .configureBotSection .stepsContainer .has-error .form-control:focus, .wrapper .mainPanel .dashboardContainer .configureBotSection .stepsContainer .has-success .form-control:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.wrapper .mainPanel .dashboardContainer .configureBotSection .stepsContainer .has-danger .form-control.form-control-danger, .wrapper .mainPanel .dashboardContainer .configureBotSection .stepsContainer .has-danger .form-control.form-control-success {
+  background-image: none;
+}
+
+.wrapper .mainPanel .dashboardContainer .configureBotSection .stepsContainer .has-success .form-control.form-control-danger, .wrapper .mainPanel .dashboardContainer .configureBotSection .stepsContainer .has-success .form-control.form-control-success {
+  background-image: none;
+}
+
+.wrapper .mainPanel .dashboardContainer .configureBotSection .stepsContainer .form-control + .form-control-feedback {
+  border-radius: .4285rem;
+  margin-top: -7px;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  vertical-align: middle;
+}
+
+.wrapper .mainPanel .dashboardContainer .configureBotSection .stepsContainer .open .form-control {
+  border-radius: .4285rem .4285rem 0 0;
+  border-bottom-color: transparent;
+}
+
+.wrapper .mainPanel .dashboardContainer .configureBotSection .stepsContainer .form-control + .input-group-append .input-group-text, .wrapper .mainPanel .dashboardContainer .configureBotSection .stepsContainer .form-control + .input-group-prepend .input-group-text {
+  background-color: #fff;
 }
 /*# sourceMappingURL=dashboard.component.css.map */

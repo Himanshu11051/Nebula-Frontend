@@ -43,36 +43,95 @@
         </div>
         <div class="steps">
           <ul>
-            <li class="completed">
+            <li (click)="changeStep(1)" [class.completed]="currentStep == 1">
               <span>1</span>
               <p>Name</p>
             </li>
-            <li>
+            <li (click)="changeStep(2)" [class.completed]="currentStep == 2">
               <span>2</span>
               <p>Settings</p>
             </li>
-            <li>
+            <li (click)="changeStep(3)" [class.completed]="currentStep == 3">
                 <span>3</span>
-                <p>Summary</p>
+                <p>Export</p>
             </li>
           </ul>
         </div>
         <div class="card stepsContainer">
           <div class="body">
-              <div class = "step1">
+              <div class = "step1" *ngIf="currentStep == 1">
                   <div class = "heading">
-                    <h2>Configure Name</h2>
+                    <span class = "stepNo">1</span><h2>Configure Name</h2>
                   </div>
                   <div class="mainBody">
-      
+                    <div class="col-md-12">
+                        <form action="#">
+                            <div class="form-group">
+                              <label>Name your bot</label>
+                              <input type="text" class="form-control">
+                            </div>
+                          </form>
+                    </div>
+                  </div>
+                </div>
+              <div class = "step2" *ngIf="currentStep == 2">
+                  <div class = "heading">
+                    <span class = "stepNo">2</span><h2>Configure your Bot Settings</h2>
+                  </div>
+                  <div class="mainBody">
+                      <div class="col-md-12">
+                          <form action="#">
+                              <div class="form-group">
+                                <label>Your Knowledge Base URL</label>
+                                <input type="url" class="form-control">
+                              </div>
+                              <div class = "textDiv">
+                                <span>Or</span>
+                              </div>
+                              <div class="form-group">
+                                  <label>Upload a CSV File</label>
+                                  <div class="upload-btn-wrapper">
+                                      <button class="btn">Upload a file</button>
+                                      <input type="file" class="form-control">
+                                    </div>
+                                </div>
+                            </form>
+                      </div>
+                  </div>
+                </div>
+              <div class = "step3" *ngIf="currentStep == 3">
+                  <div class = "heading">
+                    <span class = "stepNo">3</span><h2>Export Embeddable Chat Bot Code</h2>
+                  </div>
+                  <div class="mainBody">
+                    <div class="col-md-12">
+                      <div class="col-md-6 jsSection">
+                        <h5>Embed Javascript File</h5>
+                        <ol>
+                          <li><a href = "">Download</a> this Javascript file </li>
+                          <li>Add the downloaded Javascript file in your application's assest folder</li>
+                          <li>Include relative path of this file in your index.html</li>
+                          <li>Your chat bot window will appear</li>
+                        </ol>
+                      </div>
+                      <div class="col-md-6 wpSection">
+                          <h5>Embed Wordpress Plugin</h5>
+                          <ol>
+                              <li><a href = "">Download</a> this Wordpress plugin </li>
+                              <li>Add the downloaded plugin to your Wordpress site</li>
+                              <li>Use this short code <code>[nebula-bot-plugin]</code> in the page where you wish to show the chat bot window</li>
+                              <li>Your chat bot window will appear</li>
+                            </ol>
+                      </div>
+                    </div>
                   </div>
                 </div>
 
           </div>
           <div class="footer">
-              <button class="btn btn-default previous">Previous</button>
-              <button class="btn btn-default next">Next</button>
-              <button class="btn btn-primary finish">Finish</button>
+              <button class="btn btn-default previous" *ngIf="currentStep > 1" (click)="previousStep()">Previous</button>
+              <button class="btn btn-default next" *ngIf="currentStep < 3" (click)="nextStep()">Next</button>
+              <button class="btn btn-primary finish" *ngIf="currentStep == 3" (click)="finish()">Finish</button>
           </div>
         </div>
       </div>

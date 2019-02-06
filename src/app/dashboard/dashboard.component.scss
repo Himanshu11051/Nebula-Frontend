@@ -138,8 +138,90 @@
                     .body{
                         .heading{
                             text-align: center;
+                            margin-bottom: 30px;
                             h2{
                                 color: #fff;
+                                display: inline-block;
+                                margin-bottom: 0;
+                                vertical-align: middle;
+                                margin-left: 20px;
+                            }
+                            .stepNo{
+                                display: inline-block;
+                                height: 40px;
+                                width: 40px;
+                                border-radius: 50%;
+                                overflow: hidden;
+                                border: 1px solid #ff6491;
+                                padding: 8px;
+                                color: #fff;
+                                vertical-align: middle;
+                                background: linear-gradient(0deg, #ff6491, #ff8d72);
+                            }
+                        }
+                        .mainBody{
+                            label{
+                                color: hsla(0,0%,100%,.6) !important;
+                            }
+                            .textDiv{
+                                color: #fff;
+                                text-align: center;
+                            }
+                            .upload-btn-wrapper{
+                                position: relative;
+                                overflow: hidden;
+                                display: block;
+                                .btn{
+                                    background: #1d8cf8;
+                                    background-image: linear-gradient(to bottom left,#1d8cf8,#3358f4,#1d8cf8);
+                                    background-size: 210% 210%;
+                                    background-position: 100% 0;
+                                    background-color: #1d8cf8;
+                                    transition: all .15s ease;
+                                    box-shadow: none;
+                                    color: #fff;
+                                }
+                                input[type=file] {
+                                    font-size: 100px;
+                                    position: absolute;
+                                    left: 0;
+                                    top: 0;
+                                    opacity: 0;
+                                    cursor: pointer;
+                                    width: 120px;
+                                  }
+                            }
+                            .jsSection{
+                                float: left;
+                                height: auto;
+                                border-right: 1px solid #fff;
+                                margin-top: 20px;
+                                
+                                h5{
+                                    color: hsla(0,0%,100%,.6);
+                                    text-align: center;
+                                    margin-bottom: 20px;
+                                }
+                                ol{
+                                    li{
+                                        color: #fff;
+                                    }
+                                }
+                            }
+                            .wpSection{
+                                float: left;
+                                margin-top: 20px;
+                                height: auto;
+                                h5{
+                                    color: hsla(0,0%,100%,.6);
+                                    text-align: center;
+                                    margin-bottom: 20px;
+                                }
+                                ol{
+                                    li{
+                                        color: #fff;
+                                    }
+                                }
                             }
                         }
                     }
@@ -153,11 +235,119 @@
                             margin-right: 20px;
                             width: 95px;
                         }
-                        .previous,.next{
-                            background: linear-gradient(0deg,#3358f4,#1d8cf8);
+                        .previous{
+                            background: #fd5d93;
+                            background-image: linear-gradient(to bottom left,#fd5d93,#ec250d,#fd5d93);
+                            background-size: 210% 210%;
+                            background-position: 100% 0;
+                            background-color: #fd5d93;
+                            transition: all .15s ease;
+                            box-shadow: none;
+                            color: #fff;
+                        }
+                        .next{
+                            background: #00f2c3;
+                            background-image: linear-gradient(to bottom left,#00f2c3,#0098f0,#00f2c3);
+                            background-size: 210% 210%;
+                            background-position: 100% 0;
+                            background-color: #00f2c3;
+                            transition: all .15s ease;
+                            box-shadow: none;
+                            color: #fff;
+                        }
+                        .finish{
+                            background: #ff8d72;
+                            background-image: linear-gradient(to bottom left,#ff8d72,#ff6491,#ff8d72);
+                            background-size: 210% 210%;
+                            background-position: 100% 0;
+                            background-color: #ff8d72;
+                            transition: all .15s ease;
+                            box-shadow: none;
                             color: #fff;
                         }
                     }
+                    .form-control {
+                        display: block;
+                        width: 100%;
+                        height: calc(2.25rem + 2px);
+                        padding: .5rem .7rem;
+                        font-size: .875rem;
+                        line-height: 1.428571;
+                        color: hsla(0,0%,100%,.8);
+                        background-color: transparent;
+                        background-clip: padding-box;
+                        border: 1px solid #fff;
+                        border-radius: .25rem;
+                        box-shadow: none;
+                        transition: all .2s cubic-bezier(.68,-.55,.265,1.55);
+                        &:-moz-placeholder, &::-moz-placeholder, &::-webkit-input-placeholder, &:-ms-input-placeholder {
+                          color: #fff;
+                          opacity: 1;
+                          filter: alpha(opacity = 100);
+                        }
+                        border-color: #fff;
+                        border-radius: .4285rem;
+                        font-size: .75rem;
+                        transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+                        &:focus {
+                          border-color: #ff6491;
+                          background-color: transparent !important;
+                          box-shadow: none;
+                          + {
+                            .input-group-append .input-group-text, .input-group-prepend .input-group-text {
+                              border: 1px solid #ff6491;
+                              border-left: none;
+                              background-color: transparent;
+                            }
+                          }
+                          ~ {
+                            .input-group-append .input-group-text, .input-group-prepend .input-group-text {
+                              border: 1px solid #ff6491;
+                              border-left: none;
+                              background-color: transparent;
+                            }
+                          }
+                        }
+                      }
+                      
+                      .has-error .form-control, .has-success .form-control {
+                        box-shadow: none;
+                        &:focus {
+                          box-shadow: none;
+                        }
+                      }
+                      
+                      .has-danger .form-control {
+                        &.form-control-danger, &.form-control-success {
+                          background-image: none;
+                        }
+                      }
+                      
+                      .has-success .form-control {
+                        &.form-control-danger, &.form-control-success {
+                          background-image: none;
+                        }
+                      }
+                      
+                      .form-control + .form-control-feedback {
+                        border-radius: .4285rem;
+                        margin-top: -7px;
+                        position: absolute;
+                        right: 10px;
+                        top: 50%;
+                        vertical-align: middle;
+                      }
+                      
+                      .open .form-control {
+                        border-radius: .4285rem .4285rem 0 0;
+                        border-bottom-color: transparent;
+                      }
+                      
+                      .form-control + {
+                        .input-group-append .input-group-text, .input-group-prepend .input-group-text {
+                          background-color: #fff;
+                        }
+                      }
                 }
             }
 

@@ -11,5 +11,26 @@ export class DashboardComponent implements OnInit {
 
   ngOnInit() {
   }
+  currentStep = 1;
+  changeStep = function(step){
+    this.currentStep = step;
+  };
+  previousStep = function(){
+    this.currentStep--;
+  };
+  nextStep = function(){
+    this.currentStep++;
+  };
+  finish = function(){
 
+  };
+  uploadFile =  function(){
+
+  };
+  downloadJsFile = function(){
+
+  };
+  downloadWpPlugin = function(){
+
+  };
 }
