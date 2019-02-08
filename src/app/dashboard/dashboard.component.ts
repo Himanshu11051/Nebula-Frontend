@@ -6,7 +6,6 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./dashboard.component.scss']
 })
 export class DashboardComponent implements OnInit {
-  // fileUrl;
   constructor(private httpClient: HttpClient) { }
 
   ngOnInit() {
