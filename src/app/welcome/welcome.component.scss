@@ -34,6 +34,10 @@
                             transform: scale(1.1);
                         }
                     }
+                    .btnPrime:active{
+                      background: linear-gradient(0deg, #ff6491, #ff8d72);
+                      border-color: #ff6491;
+                    }
                   }
                   
                   .form-label-group {
@@ -74,6 +78,14 @@
                         }
                       }
                     }
+                    body .btn-primary:active{
+                      background: linear-gradient(0deg, #ff6491, #ff8d72);
+                      border-color: #ff6491;
+                    }
+                    .btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle{
+                      background: linear-gradient(0deg, #ff6491, #ff8d72);
+                      border-color: #ff6491;
+                  }
                   }
             }
         }
