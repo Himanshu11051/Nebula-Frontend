@@ -10,33 +10,43 @@ export class DashboardComponent implements OnInit {
 
   ngOnInit() {
   }
-  
+
   currentStep = 1;
-  changeStep = function(step){
+  changeStep = function (step) {
     this.currentStep = step;
   };
-  previousStep = function(){
+  previousStep = function () {
     this.currentStep--;
   };
-  nextStep = function(){
+  nextStep = function () {
     this.currentStep++;
-  };
-  finish = function(){
 
   };
-  uploadFile =  function(){
+  finish = function () {
 
   };
-  // downloadJsFile = function(){
-  //   // document.getElementById('my_iframe').src = "https://volafile.org/get/B7AyrJ6YXwjZA/nebula-bot.js";
-  //   this.httpClient.get("https://volafile.org/get/B7AyrJ6YXwjZA/nebula-bot.js").subscribe((res)=>{
-  //     console.log(res);
-  // });
-  // };
-  downloadWpPlugin = function(){
+  uploadFile = function () {
+
+  };
+  setKB = function () {
+    var urlObj = {
+      url: "https://corrus.com/support/",
+      name: "TestKB"
+    }
+    this.httpClient.post("https://nebula-test.azurewebsites.net/api/updateKB", urlObj).subscribe((res) => {
+      console.log(res);
+    });
+  };
+  downloadJsFile = function () {
+
+    this.httpClient.get("https://volafile.org/get/B7AyrJ6YXwjZA/nebula-bot.js").subscribe((res) => {
+      console.log(res);
+    });
+  };
+  downloadWpPlugin = function () {
 
   };
 
- 
+
 
 }
