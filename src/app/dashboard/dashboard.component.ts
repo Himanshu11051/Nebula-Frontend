@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 @Component({
   selector: 'app-dashboard',
   templateUrl: './dashboard.component.html',
@@ -30,10 +30,15 @@ export class DashboardComponent implements OnInit {
   };
   setKB = function () {
     var urlObj = {
-      url: "https://corrus.com/support/",
+      url: "https://docs.microsoft.com/azure/cognitive-services/Emotion/FAQ",
       name: "TestKB"
     }
-    this.httpClient.post("https://nebula-test.azurewebsites.net/api/updateKB", urlObj).subscribe((res) => {
+    this.httpClient.post("https://nebula-test.azurewebsites.net/api/updateKB", urlObj, {
+      headers: new HttpHeaders({
+        'Content-Type': 'application/json',
+        'Access-Control-Allow-Origin': '*'
+      })
+    }).subscribe((res) => {
       console.log(res);
     });
   };
