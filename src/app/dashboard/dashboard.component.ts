@@ -33,10 +33,10 @@ export class DashboardComponent implements OnInit {
       url: "https://docs.microsoft.com/azure/cognitive-services/Emotion/FAQ",
       name: "TestKB"
     }
-    this.httpClient.post("https://nebula-test.azurewebsites.net/api/updateKB", urlObj, {
+    this.httpClient.post("http://localhost:3978/api/updateKB", urlObj, {
       headers: new HttpHeaders({
         'Content-Type': 'application/json',
-        'Access-Control-Allow-Origin': '*'
+        // 'Access-Control-Allow-Origin': '*'
       })
     }).subscribe((res) => {
       console.log(res);
