@@ -23,12 +23,18 @@
             left: 0;
             padding: .625rem .9375rem;
             color: #fff;
+            .navbar-brand{
+                position: absolute;
+                left: 100px;
+                font-size: 25px;
+            }
             .navbar-nav{
                 display: flex;
                 flex-direction: column;
                 padding-left: 0;
                 margin-bottom: 0;
                 list-style: none;
+
                 li{
                     color: #fff;
                     padding: 0 10px;
@@ -38,11 +44,18 @@
                         width: 40px;
                         border-radius: 50%;
                         overflow: hidden;
-                        border: 1px solid #fff;
+                        // border: 1px solid #ff6491;
                         padding: 8px;
                         color: #fff;
                         vertical-align: middle;
-                        background: linear-gradient(0deg,#ff6491,#ff8d72);
+                        // background: linear-gradient(0deg,#ff6491,#ff8d72);
+                        img{
+                            height: 40px;
+                            width: 40px;
+                            position: relative;
+                            bottom: 8px;
+                            right: 8px;
+                        }
                     }
                     .caret{
                         position: absolute;
@@ -76,7 +89,24 @@
             position: relative;
             width: 100%;
             margin-bottom: 30px;
-            box-shadow: 0 1px 20px 0 rgba(0,0,0,.1)
+            box-shadow: 0 1px 20px 0 rgba(0,0,0,.1);
+            .info{
+                span{
+                    float:left;
+                    svg{
+                        fill: hsla(0,0%,100%,.6);
+                    }
+                }
+                p{
+                    float: left;
+                    width: 95%;
+                    color: hsla(0,0%,100%,.6);
+                    vertical-align: top;
+                    margin-left: 10px;
+                    font-size: 14px;
+                    text-align: justify;
+                }
+            }
         }
         .dashboardContainer{
             position: absolute;
@@ -132,6 +162,7 @@
                 }
                 .middleLine{
                     padding-top: 30px;
+                    margin-bottom: 18px;
                 }
                 .body{
                     max-width: 800px;
@@ -172,11 +203,24 @@
                         }
                         .mainBody{
                             label{
-                                color: hsla(0,0%,100%,.6) !important;
+                                color: #fff !important;
+                                span{
+                                    color: red;
+                                }
                             }
                             .textDiv{
                                 color: #fff;
                                 text-align: center;
+                            }
+                            .addKB{
+                                background: #1d8cf8;
+                                background-image: linear-gradient(to bottom left,#1d8cf8,#3358f4,#1d8cf8);
+                                background-size: 210% 210%;
+                                background-position: 100% 0;
+                                background-color: #1d8cf8;
+                                transition: all .15s ease;
+                                box-shadow: none;
+                                color: #fff;
                             }
                             .upload-btn-wrapper{
                                 position: relative;

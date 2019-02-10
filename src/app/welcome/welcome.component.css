@@ -16,6 +16,11 @@
   padding-top: 60px;
 }
 
+.container .row .mainContainer .leftContainer ul {
+  font-size: 12px;
+  text-align: left;
+}
+
 .container .row .mainContainer .rightContainer {
   float: left;
   border-left: 1px solid #383c49;
@@ -41,6 +46,12 @@
   text-decoration: underline;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+}
+
+.container .row .mainContainer .rightContainer .form-signin .btnPrime:active {
+  background: -webkit-gradient(linear, left bottom, left top, from(#ff6491), to(#ff8d72));
+  background: linear-gradient(0deg, #ff6491, #ff8d72);
+  border-color: #ff6491;
 }
 
 .container .row .mainContainer .rightContainer .form-label-group {
@@ -87,5 +98,17 @@
   padding-bottom: calc(var(--input-padding-y) / 3);
   font-size: 12px;
   color: #777;
+}
+
+.container .row .mainContainer .rightContainer .form-label-group body .btn-primary:active {
+  background: -webkit-gradient(linear, left bottom, left top, from(#ff6491), to(#ff8d72));
+  background: linear-gradient(0deg, #ff6491, #ff8d72);
+  border-color: #ff6491;
+}
+
+.container .row .mainContainer .rightContainer .form-label-group .btn-primary:not(:disabled):not(.disabled).active, .container .row .mainContainer .rightContainer .form-label-group .btn-primary:not(:disabled):not(.disabled):active, .container .row .mainContainer .rightContainer .form-label-group .show > .btn-primary.dropdown-toggle {
+  background: -webkit-gradient(linear, left bottom, left top, from(#ff6491), to(#ff8d72));
+  background: linear-gradient(0deg, #ff6491, #ff8d72);
+  border-color: #ff6491;
 }
 /*# sourceMappingURL=welcome.component.css.map */

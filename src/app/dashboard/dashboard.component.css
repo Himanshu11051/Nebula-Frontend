@@ -29,6 +29,12 @@
   color: #fff;
 }
 
+.wrapper .mainPanel .navbar .navbar-brand {
+  position: absolute;
+  left: 100px;
+  font-size: 25px;
+}
+
 .wrapper .mainPanel .navbar .navbar-nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -53,12 +59,17 @@
   width: 40px;
   border-radius: 50%;
   overflow: hidden;
-  border: 1px solid #fff;
   padding: 8px;
   color: #fff;
   vertical-align: middle;
-  background: -webkit-gradient(linear, left bottom, left top, from(#ff6491), to(#ff8d72));
-  background: linear-gradient(0deg, #ff6491, #ff8d72);
+}
+
+.wrapper .mainPanel .navbar .navbar-nav li .photo img {
+  height: 40px;
+  width: 40px;
+  position: relative;
+  bottom: 8px;
+  right: 8px;
 }
 
 .wrapper .mainPanel .navbar .navbar-nav li .caret {
@@ -81,6 +92,10 @@
 .wrapper .mainPanel .navbar .navbar-nav li .dropdown-menu {
   position: absolute;
   left: -98px;
+}
+
+.wrapper .mainPanel .navbar .navbar-nav li .dropdown-item.active, .wrapper .mainPanel .navbar .navbar-nav li .dropdown-item:active {
+  background-color: #ff817c;
 }
 
 .wrapper .mainPanel .card {
@@ -149,6 +164,16 @@
   -webkit-box-shadow: 0 2px 22px 0 rgba(0, 0, 0, 0.2), 0 2px 30px 0 rgba(0, 0, 0, 0.35);
           box-shadow: 0 2px 22px 0 rgba(0, 0, 0, 0.2), 0 2px 30px 0 rgba(0, 0, 0, 0.35);
   font-weight: bolder;
+}
+
+.wrapper .mainPanel .dashboardContainer .configureBotSection .middleLine {
+  padding-top: 30px;
+}
+
+.wrapper .mainPanel .dashboardContainer .configureBotSection .body {
+  max-width: 800px;
+  width: 750px;
+  margin: 0 auto;
 }
 
 .wrapper .mainPanel .dashboardContainer .configureBotSection .stepsContainer {

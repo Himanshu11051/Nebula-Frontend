@@ -27,6 +27,28 @@ body {
   padding-top: 40px;
   padding-bottom: 40px;
   background: radial-gradient(#1e1e2f,#1e1e24);
+  .loader{
+    height: 60px;
+    position: absolute;
+    right: 25px;
+    top: 5px;
+  }
+  .mat-snack-bar-container{
+    background: #dddddd;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    .mat-button{
+      color: #ec386f;
+      font-weight: 500;
+    }
+    .mat-button:focus{
+      outline:none;
+      span,.mat-button-ripple{
+        outline: none;
+      }
+    }
+  }
   .btn-primary {
     color: #fff;
     background: linear-gradient(0deg,#ff6491,#ff8d72);
@@ -38,6 +60,9 @@ body {
   }
   a{
       color: #ff6491;
+  }
+  a:hover{
+    color: #ff8d72;
   }
   textarea:focus,
 input[type="text"]:focus,
