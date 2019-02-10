@@ -6,6 +6,12 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
   styleUrls: ['./dashboard.component.scss']
 })
 export class DashboardComponent implements OnInit {
+
+  nebula : any = {
+    url: "",
+    name: ""
+  };
+
   constructor(private httpClient: HttpClient) { }
 
   ngOnInit() {
@@ -30,8 +36,8 @@ export class DashboardComponent implements OnInit {
   };
   setKB = function () {
     var urlObj = {
-      url: "https://docs.microsoft.com/azure/cognitive-services/Emotion/FAQ",
-      name: "TestKB"
+      url: this.nebula.url,
+      name: this.nebula.name
     }
     this.httpClient.post("https://nebula-bot.azurewebsites.net/api/updateKB", urlObj, {
       headers: new HttpHeaders({
@@ -40,6 +46,11 @@ export class DashboardComponent implements OnInit {
       })
     }).subscribe((res) => {
       console.log(res);
+      if(res.statusCode == 404){
+        alert('Unable to publish your Knowledge base');
+      }else{
+        alert('Your Knowledge base has been updated and publish successfully!!');
+      }
     });
   };
   downloadJsFile = function () {
